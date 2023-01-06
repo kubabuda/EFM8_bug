@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name EFM8_Bug)(type KiCad)(uri ${KIPRJMOD}/Footprints/EFM8_Bug.pretty)(options "")(descr ""))
+)
