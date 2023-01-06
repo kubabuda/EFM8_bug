@@ -16,57 +16,57 @@ $EndDescr
 $Comp
 L MCU_SiliconLabs:EFM8BB10F8G-A-QFN20 U2
 U 1 1 63B75B06
-P 6800 3150
-F 0 "U2" H 6100 3950 50  0000 C CNN
-F 1 "EFM8BB10F8G-A-QFN20" H 6200 3800 50  0000 C CNN
-F 2 "Package_DFN_QFN:SiliconLabs_QFN-20-1EP_3x3mm_P0.5mm_EP1.8x1.8mm" H 6800 3950 50  0001 C CNN
-F 3 "https://www.silabs.com/documents/public/data-sheets/efm8bb1-datasheet.pdf" H 6800 3150 50  0001 C CNN
-	1    6800 3150
+P 7850 2550
+F 0 "U2" H 7150 3350 50  0000 C CNN
+F 1 "EFM8BB10F8G-A-QFN20" H 7250 3200 50  0000 C CNN
+F 2 "Package_DFN_QFN:SiliconLabs_QFN-20-1EP_3x3mm_P0.5mm_EP1.8x1.8mm" H 7850 3350 50  0001 C CNN
+F 3 "https://www.silabs.com/documents/public/data-sheets/efm8bb1-datasheet.pdf" H 7850 2550 50  0001 C CNN
+	1    7850 2550
 	1    0    0    -1  
 $EndComp
-Text GLabel 6100 2750 0    50   Input ~ 0
+Text GLabel 7150 2150 0    50   Input ~ 0
 C2CK
-Text GLabel 6100 2850 0    50   Input ~ 0
+Text GLabel 7150 2250 0    50   Input ~ 0
 P0.0
-Text GLabel 6100 2950 0    50   Input ~ 0
+Text GLabel 7150 2350 0    50   Input ~ 0
 P0.1
-Text GLabel 6100 3050 0    50   Input ~ 0
+Text GLabel 7150 2450 0    50   Input ~ 0
 P0.2
-Text GLabel 6100 3150 0    50   Input ~ 0
+Text GLabel 7150 2550 0    50   Input ~ 0
 P0.3
-Text GLabel 6100 3250 0    50   Input ~ 0
+Text GLabel 7150 2650 0    50   Input ~ 0
 P0.4
-Text GLabel 6100 3350 0    50   Input ~ 0
+Text GLabel 7150 2750 0    50   Input ~ 0
 P0.5
-Text GLabel 6100 3450 0    50   Input ~ 0
+Text GLabel 7150 2850 0    50   Input ~ 0
 P0.6
-Text GLabel 6100 3550 0    50   Input ~ 0
+Text GLabel 7150 2950 0    50   Input ~ 0
 P0.7
-Text GLabel 7500 2750 2    50   Input ~ 0
+Text GLabel 8550 2150 2    50   Input ~ 0
 P1.0
-Text GLabel 7500 2850 2    50   Input ~ 0
+Text GLabel 8550 2250 2    50   Input ~ 0
 P1.1
-Text GLabel 7500 2950 2    50   Input ~ 0
+Text GLabel 8550 2350 2    50   Input ~ 0
 P1.2
-Text GLabel 7500 3050 2    50   Input ~ 0
+Text GLabel 8550 2450 2    50   Input ~ 0
 P1.3
-Text GLabel 7500 3150 2    50   Input ~ 0
+Text GLabel 8550 2550 2    50   Input ~ 0
 P1.4
-Text GLabel 7500 3250 2    50   Input ~ 0
+Text GLabel 8550 2650 2    50   Input ~ 0
 P1.5
-Text GLabel 7500 3350 2    50   Input ~ 0
+Text GLabel 8550 2750 2    50   Input ~ 0
 P1.6
-Text GLabel 7500 3450 2    50   Input ~ 0
+Text GLabel 8550 2850 2    50   Input ~ 0
 C2D
 $Comp
 L power:GND #PWR0101
 U 1 1 63B7C5DC
-P 6800 3850
-F 0 "#PWR0101" H 6800 3600 50  0001 C CNN
-F 1 "GND" H 6805 3677 50  0000 C CNN
-F 2 "" H 6800 3850 50  0001 C CNN
-F 3 "" H 6800 3850 50  0001 C CNN
-	1    6800 3850
+P 7850 3250
+F 0 "#PWR0101" H 7850 3000 50  0001 C CNN
+F 1 "GND" H 7855 3077 50  0000 C CNN
+F 2 "" H 7850 3250 50  0001 C CNN
+F 3 "" H 7850 3250 50  0001 C CNN
+	1    7850 3250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -83,12 +83,12 @@ $EndComp
 $Comp
 L power:VBUS #PWR0103
 U 1 1 63B7CF0E
-P 2250 1950
-F 0 "#PWR0103" H 2250 1800 50  0001 C CNN
-F 1 "VBUS" H 2265 2123 50  0000 C CNN
-F 2 "" H 2250 1950 50  0001 C CNN
-F 3 "" H 2250 1950 50  0001 C CNN
-	1    2250 1950
+P 2700 1950
+F 0 "#PWR0103" H 2700 1800 50  0001 C CNN
+F 1 "VBUS" H 2715 2123 50  0000 C CNN
+F 2 "" H 2700 1950 50  0001 C CNN
+F 3 "" H 2700 1950 50  0001 C CNN
+	1    2700 1950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -142,183 +142,124 @@ Wire Wire Line
 Wire Wire Line
 	2150 2050 2250 2050
 Wire Wire Line
-	2250 2050 2250 1950
-$Comp
-L Regulator_Linear:MCP1703A-3302_SOT23 U1
-U 1 1 63B827EB
-P 4100 2100
-F 0 "U1" H 4100 2342 50  0000 C CNN
-F 1 "MCP1703A-3302_SOT23" H 4100 2251 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 4100 2300 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20005122B.pdf" H 4100 2050 50  0001 C CNN
-	1    4100 2100
-	1    0    0    -1  
-$EndComp
+	2700 2050 2700 1950
 $Comp
 L power:VBUS #PWR0105
 U 1 1 63B85EEB
-P 3550 1950
-F 0 "#PWR0105" H 3550 1800 50  0001 C CNN
-F 1 "VBUS" H 3565 2123 50  0000 C CNN
-F 2 "" H 3550 1950 50  0001 C CNN
-F 3 "" H 3550 1950 50  0001 C CNN
-	1    3550 1950
+P 4050 2250
+F 0 "#PWR0105" H 4050 2100 50  0001 C CNN
+F 1 "VBUS" H 4065 2423 50  0000 C CNN
+F 2 "" H 4050 2250 50  0001 C CNN
+F 3 "" H 4050 2250 50  0001 C CNN
+	1    4050 2250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3550 1950 3550 2100
-Wire Wire Line
-	3550 2100 3800 2100
+	4050 2250 4050 2400
 $Comp
 L power:+3V3 #PWR0106
 U 1 1 63B86B2B
-P 4600 1900
-F 0 "#PWR0106" H 4600 1750 50  0001 C CNN
-F 1 "+3V3" H 4615 2073 50  0000 C CNN
-F 2 "" H 4600 1900 50  0001 C CNN
-F 3 "" H 4600 1900 50  0001 C CNN
-	1    4600 1900
+P 5100 2200
+F 0 "#PWR0106" H 5100 2050 50  0001 C CNN
+F 1 "+3V3" H 5115 2373 50  0000 C CNN
+F 2 "" H 5100 2200 50  0001 C CNN
+F 3 "" H 5100 2200 50  0001 C CNN
+	1    5100 2200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR0107
 U 1 1 63B872D9
-P 6800 1950
-F 0 "#PWR0107" H 6800 1800 50  0001 C CNN
-F 1 "+3V3" H 6815 2123 50  0000 C CNN
-F 2 "" H 6800 1950 50  0001 C CNN
-F 3 "" H 6800 1950 50  0001 C CNN
-	1    6800 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C2
-U 1 1 63B88486
-P 4600 2200
-F 0 "C2" H 4692 2246 50  0000 L CNN
-F 1 "C_Small" H 4692 2155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4600 2200 50  0001 C CNN
-F 3 "~" H 4600 2200 50  0001 C CNN
-	1    4600 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0108
-U 1 1 63B88A8B
-P 4100 2500
-F 0 "#PWR0108" H 4100 2250 50  0001 C CNN
-F 1 "GND" H 4105 2327 50  0000 C CNN
-F 2 "" H 4100 2500 50  0001 C CNN
-F 3 "" H 4100 2500 50  0001 C CNN
-	1    4100 2500
+P 7850 1350
+F 0 "#PWR0107" H 7850 1200 50  0001 C CNN
+F 1 "+3V3" H 7865 1523 50  0000 C CNN
+F 2 "" H 7850 1350 50  0001 C CNN
+F 3 "" H 7850 1350 50  0001 C CNN
+	1    7850 1350
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0109
 U 1 1 63B88F0F
-P 4600 2350
-F 0 "#PWR0109" H 4600 2100 50  0001 C CNN
-F 1 "GND" H 4605 2177 50  0000 C CNN
-F 2 "" H 4600 2350 50  0001 C CNN
-F 3 "" H 4600 2350 50  0001 C CNN
-	1    4600 2350
+P 5100 2650
+F 0 "#PWR0109" H 5100 2400 50  0001 C CNN
+F 1 "GND" H 5105 2477 50  0000 C CNN
+F 2 "" H 5100 2650 50  0001 C CNN
+F 3 "" H 5100 2650 50  0001 C CNN
+	1    5100 2650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4600 2350 4600 2300
+	5100 2650 5100 2600
 Wire Wire Line
-	7050 2050 6800 2050
+	8100 1450 7850 1450
 Wire Wire Line
-	6800 1950 6800 2050
-Connection ~ 6800 2050
+	7850 1350 7850 1450
+Connection ~ 7850 1450
 Wire Wire Line
-	6800 2050 6800 2450
+	7850 1450 7850 1850
 Wire Wire Line
-	4400 2100 4600 2100
+	4900 2400 5100 2400
 Wire Wire Line
-	4600 2100 4600 1900
-Wire Wire Line
-	4100 2400 4100 2500
-Connection ~ 4600 2100
+	5100 2400 5100 2200
+Connection ~ 5100 2400
 $Comp
 L Device:C_Small C3
 U 1 1 63B8F4C4
-P 7050 2150
-F 0 "C3" H 7142 2196 50  0000 L CNN
-F 1 "C_Small" H 7142 2105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 7050 2150 50  0001 C CNN
-F 3 "~" H 7050 2150 50  0001 C CNN
-	1    7050 2150
+P 8100 1550
+F 0 "C3" H 8192 1596 50  0000 L CNN
+F 1 "C_Small" H 8192 1505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8100 1550 50  0001 C CNN
+F 3 "~" H 8100 1550 50  0001 C CNN
+	1    8100 1550
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0110
 U 1 1 63B8F69C
-P 7050 2300
-F 0 "#PWR0110" H 7050 2050 50  0001 C CNN
-F 1 "GND" H 7055 2127 50  0000 C CNN
-F 2 "" H 7050 2300 50  0001 C CNN
-F 3 "" H 7050 2300 50  0001 C CNN
-	1    7050 2300
+P 8100 1700
+F 0 "#PWR0110" H 8100 1450 50  0001 C CNN
+F 1 "GND" H 8105 1527 50  0000 C CNN
+F 2 "" H 8100 1700 50  0001 C CNN
+F 3 "" H 8100 1700 50  0001 C CNN
+	1    8100 1700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7050 2300 7050 2250
-$Comp
-L Device:C_Small C1
-U 1 1 63B90192
-P 3550 2200
-F 0 "C1" H 3642 2246 50  0000 L CNN
-F 1 "C_Small" H 3642 2155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3550 2200 50  0001 C CNN
-F 3 "~" H 3550 2200 50  0001 C CNN
-	1    3550 2200
-	1    0    0    -1  
-$EndComp
+	8100 1700 8100 1650
 $Comp
 L power:GND #PWR0111
 U 1 1 63B90388
-P 3550 2350
-F 0 "#PWR0111" H 3550 2100 50  0001 C CNN
-F 1 "GND" H 3555 2177 50  0000 C CNN
-F 2 "" H 3550 2350 50  0001 C CNN
-F 3 "" H 3550 2350 50  0001 C CNN
-	1    3550 2350
+P 4050 2650
+F 0 "#PWR0111" H 4050 2400 50  0001 C CNN
+F 1 "GND" H 4055 2477 50  0000 C CNN
+F 2 "" H 4050 2650 50  0001 C CNN
+F 3 "" H 4050 2650 50  0001 C CNN
+	1    4050 2650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3550 2350 3550 2300
-Connection ~ 3550 2100
+	4050 2650 4050 2600
+Connection ~ 4050 2400
 $Comp
 L conn:CONN_2 P1
 U 1 1 63B9289F
-P 10300 2250
-F 0 "P1" H 10428 2278 40  0000 L CNN
-F 1 "C2 Debug interface" H 10428 2202 40  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10300 2250 50  0001 C CNN
-F 3 "" H 10300 2250 50  0001 C CNN
-	1    10300 2250
+P 9700 4700
+F 0 "P1" H 9828 4728 40  0000 L CNN
+F 1 "C2 Debug interface" H 9828 4652 40  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9700 4700 50  0001 C CNN
+F 3 "" H 9700 4700 50  0001 C CNN
+	1    9700 4700
 	1    0    0    -1  
 $EndComp
-Text GLabel 9950 2150 0    50   Input ~ 0
+Text GLabel 9350 4600 0    50   Input ~ 0
 C2CK
-Text GLabel 9950 2350 0    50   Input ~ 0
+Text GLabel 9350 4800 0    50   Input ~ 0
 C2D
 NoConn ~ 2150 2850
 NoConn ~ 2150 2750
 NoConn ~ 2150 2650
 NoConn ~ 2150 2550
-$Comp
-L Connector:USB_C_Receptacle_USB2.0 J1
-U 1 1 63BA358C
-P 1550 2650
-F 0 "J1" H 1657 3425 50  0000 C CNN
-F 1 "USB_C_Receptacle_USB2.0" H 1657 3426 50  0001 C CNN
-F 2 "EFM8_Bug:usb-c-depopulated-2.0-pcb" H 1700 2650 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1700 2650 50  0001 C CNN
-	1    1550 2650
-	1    0    0    -1  
-$EndComp
 NoConn ~ 2150 3150
 NoConn ~ 2150 3250
 NoConn ~ 1250 3550
@@ -419,4 +360,76 @@ Text GLabel 3000 5700 2    50   Input ~ 0
 P1.5
 Text GLabel 3000 5800 2    50   Input ~ 0
 P1.6
+$Comp
+L Device:C_Small C2
+U 1 1 63B88486
+P 5100 2500
+F 0 "C2" H 5192 2546 50  0000 L CNN
+F 1 "2.2uF" H 5192 2455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5100 2500 50  0001 C CNN
+F 3 "~" H 5100 2500 50  0001 C CNN
+	1    5100 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 63B90192
+P 4050 2500
+F 0 "C1" H 4142 2546 50  0000 L CNN
+F 1 "1uF" H 4142 2455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4050 2500 50  0001 C CNN
+F 3 "~" H 4050 2500 50  0001 C CNN
+	1    4050 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 2400 4300 2400
+Wire Wire Line
+	4600 2700 4600 2800
+$Comp
+L power:GND #PWR0108
+U 1 1 63B88A8B
+P 4600 2800
+F 0 "#PWR0108" H 4600 2550 50  0001 C CNN
+F 1 "GND" H 4605 2627 50  0000 C CNN
+F 2 "" H 4600 2800 50  0001 C CNN
+F 3 "" H 4600 2800 50  0001 C CNN
+	1    4600 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:MCP1703A-3302_SOT23 U1
+U 1 1 63B827EB
+P 4600 2400
+F 0 "U1" H 4600 2642 50  0000 C CNN
+F 1 "AP2210-3.3TRG1" H 4600 2551 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4600 2600 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20005122B.pdf" H 4600 2350 50  0001 C CNN
+	1    4600 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J1
+U 1 1 63BA358C
+P 1550 2650
+F 0 "J1" H 1657 3425 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 1657 3426 50  0001 C CNN
+F 2 "EFM8_Bug:usb-c-depopulated-2.0-pcb" H 1700 2650 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1700 2650 50  0001 C CNN
+	1    1550 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Fuse F1
+U 1 1 63C1ECAF
+P 2400 2050
+F 0 "F1" V 2203 2050 50  0000 C CNN
+F 1 "SR075-06" V 2294 2050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2330 2050 50  0001 C CNN
+F 3 "~" H 2400 2050 50  0001 C CNN
+	1    2400 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2550 2050 2700 2050
 $EndSCHEMATC
