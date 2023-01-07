@@ -256,13 +256,6 @@ Text GLabel 9350 4600 0    50   Input ~ 0
 C2CK
 Text GLabel 9350 4800 0    50   Input ~ 0
 C2D
-NoConn ~ 2150 2850
-NoConn ~ 2150 2750
-NoConn ~ 2150 2650
-NoConn ~ 2150 2550
-NoConn ~ 2150 3150
-NoConn ~ 2150 3250
-NoConn ~ 1250 3550
 $Comp
 L conn:CONN_9 P2
 U 1 1 63BAFEFF
@@ -409,17 +402,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20005122B.pdf" H 4600 2350 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:USB_C_Receptacle_USB2.0 J1
-U 1 1 63BA358C
-P 1550 2650
-F 0 "J1" H 1657 3425 50  0000 C CNN
-F 1 "USB_C_Receptacle_USB2.0" H 1657 3426 50  0001 C CNN
-F 2 "EFM8_Bug:usb-c-depopulated-2.0-pcb" H 1700 2650 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1700 2650 50  0001 C CNN
-	1    1550 2650
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:Fuse F1
 U 1 1 63C1ECAF
 P 2400 2050
@@ -432,4 +414,15 @@ F 3 "~" H 2400 2050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2550 2050 2700 2050
+$Comp
+L EFM8_Bug:USB_C_Receptacle_USB2.0_PowerOnly J1
+U 1 1 63BA358C
+P 1550 2650
+F 0 "J1" H 1657 3425 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 1657 3426 50  0001 C CNN
+F 2 "EFM8_Bug:usb-c-depopulated-2.0-pcb" H 1700 2650 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1700 2650 50  0001 C CNN
+	1    1550 2650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
